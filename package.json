@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node dist/index.js",
+    "format": "prettier --write .",
+    "lint": "eslint src --ext ts --max-warnings 0",
+    "lint:fix": "eslint src --ext ts --max-warnings 0 --fix",
+    "lint-staged": "lint-staged --allow-empty",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^0.4.5",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/node": "^20.3.2"
+  }
+}
